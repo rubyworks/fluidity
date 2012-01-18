@@ -1,8 +1,8 @@
 = Fluidity
 
-{Homepage}[http://rubyworks.github.com/fluidity] /
-{Source Code}[http://github.com/rubyworks/fluidity] /
-{MailingList}[http://groups.google.com/group/rubyworks-mailinglist]
+{Website}[http://rubyworks.github.com/fluidity] /
+{Development}[http://github.com/rubyworks/fluidity] /
+{Mailing List}[http://groups.google.com/group/rubyworks-mailinglist]
 
 
 == DESCRIPTION

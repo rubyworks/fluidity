@@ -1,4 +1,4 @@
-require 'assay/grammer'
+require 'fluidity/grammer'
 
 class BasicObject
 
@@ -10,7 +10,7 @@ class BasicObject
     if matcher
       matcher =~ self
     else
-      ::Assay::Grammer::Must.new(self)
+      ::Fluidity::Grammer::Must.new(self)
     end
   end
 
@@ -22,7 +22,7 @@ class BasicObject
     if matcher
       matcher !~ self
     else
-      ::Assay::Grammer::Must.new(self, true)
+      ::Fluidity::Grammer::Must.new(self, true)
     end
   end
 
