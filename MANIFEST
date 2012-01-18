@@ -1,0 +1,11 @@
+#!mast .ruby bin demo qed lib test [A-Z][A-Z]*
+.ruby
+lib/fluidity/assert.rb
+lib/fluidity/is.rb
+lib/fluidity/must.rb
+lib/fluidity/should.rb
+lib/fluidity.rb
+lib/fluidity.yml
+HISTORY.rdoc
+README.rdoc
+COPYING.rdoc
