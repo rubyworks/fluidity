@@ -1,20 +1,15 @@
-= Assay RSpec
+= Fluidity
 
-{Homepage}[http://rubyworks.github.com/assay-rspec] /
-{Source Code}[http://github.com/rubyworks/assay-rspec] /
+{Homepage}[http://rubyworks.github.com/fluidity] /
+{Source Code}[http://github.com/rubyworks/fluidity] /
 {MailingList}[http://groups.google.com/group/rubyworks-mailinglist]
 
 
 == DESCRIPTION
 
-Assay RSpec is a compatability layer for using RSpec's matcher
-notation with the {Assay}[http://rubyworks.github.com/assay]
-assertions framework.
-
-Assay RSpec defines a set of RSpec-compatible matcher methods which
-depend on Assay's assertion classes. This allows developers to change
-test frameworks without having to change a slew of previously
-defined assertions.
+Fluidity is a an assertions notation built on top of the Assay
+assertions framework. It defines a set of methods that provide
+a fluid notation for specify test assertions.
 
 Assay defines assertions in the same way that Ruby defines exceptions.
 An assertion is nothing more that an extended Exception class.
@@ -25,32 +20,45 @@ project for more information on this foundational library.
 
 == USAGE
 
-Simply require the `assay/rspec` script, and include the `Assay::Matchers`
-mixin module into your test framework, whereever it requires it (which may
-be as simple as the topleve namespace).
+Developers want to write assertions easily and concisely. To this end Fluidity
+provides a flexible grammer system which can be used by requiring any of the
+prime grammer methods that extend BasicObject. The most common is probably `should`.
 
-  require 'assay/rspec'
+  require 'fluidity/should'
 
-  include Assay::Matchers
+  10.should.be.kind_of(Integer)
 
-Now assertions can be made just as if you were using RSpec.
+But if you are acustom to MiniTest's spec methods, you might prefer `must`.
 
-  10.should be_kind_of(Integer)
+  require 'fluidity/must'
 
+  10.must.be.kind_of(Integer)
 
-== LIMITATIONS
+Aslo provided is `assert` for those techy aficionados.
 
-Note that compatibility is not 100%, yet. In particluar, the `#have` matcher,
-being a bit complicated, hasn't been implemented. Compatibilty will improve
-with future releases. Please feel _obligated_ to submit a patch, if you need
-a missing a feature ;)
+  require 'fluidity/assert'
+
+  10.assert.kind_of(Integer)
+
+So what so fludi about all this. Well, Fluidity allows the developer quite
+the english like expression. For instance.
+
+  10.should.not.be.an.instance_of?(String)
+
+Pretty neat. But, what about speed? Of course, running through four extra method
+calls to make an assertion is going to be slower than making just a single method
+call. So, yes tests might run a bit slower on Fluidity than they would on some
+other less readable assertions system. However, method calls are pretty dang fast
+and unlikely to present any significant performance overhead on test runs.
+At most, tests runs might take a couple of additional seconds for _extremely_
+large test suites.
 
 
 == INSTALLATION
 
 To install with RubyGems simply open a console and type:
 
-  $ gem install assay-rspec
+  $ gem install fluidity
 
 Site installation with the tarball can be done with Ruby Setup
 (gem install setup). See http://rubyworks.github.com/setup.
@@ -62,5 +70,5 @@ Copyright (c) 2012 Rubyworks
 
 This program is ditributed under the terms of the *BSD-2-Cluase* license.
 
-See LICENSE.rdoc file for details.
+See COPYING.rdoc file for details.
 
