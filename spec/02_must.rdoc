@@ -1,4 +1,4 @@
-= Grammer
+== Must
 
   require 'fluidity/must'
 
@@ -42,7 +42,7 @@ We must also make sure such assertions can fail.
     true.must.be.false
   end
 
-  EqualityAssay.must.be.raised do
+  EqualAssay.must.be.raised do
     (5 + 5).must == 11
   end
 

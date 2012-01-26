@@ -14,9 +14,9 @@ module Fluidity
       # Have to override the ususal `#==` method to support this.
       def ==(other)
         if @negate
-          ::EqualityAssay.refute!(@target, other)
+          ::EqualAssay.refute!(@target, other, :backtrace=>caller)
         else
-          ::EqualityAssay.assert!(@target, other)
+          ::EqualAssay.assert!(@target, other, :backtrace=>caller)
         end
       end
 
@@ -30,7 +30,12 @@ module Fluidity
             assay.assert!(@target, *a, &b)
           end
         else
-          super(s, *a, &b)
+          q = (s.to_s.end_with?('?') ? s : (s.to_s+'?'))
+          if @target.respond_to?(q)
+            assert(false, "#{q} failed", caller) unless @target.send(q, *a, &b)
+          else
+            super(s, *a, &b)
+          end
         end
       end
 
