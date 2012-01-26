@@ -1,11 +1,12 @@
-#!mast .ruby bin demo qed lib test [A-Z][A-Z]*
+#!mast .ruby .yardopts bin demo lib spec test [A-Z].*
 .ruby
 lib/fluidity/assert.rb
+lib/fluidity/grammer.rb
 lib/fluidity/is.rb
 lib/fluidity/must.rb
 lib/fluidity/should.rb
 lib/fluidity.rb
 lib/fluidity.yml
-HISTORY.rdoc
-README.rdoc
-COPYING.rdoc
+spec/01_should.rdoc
+spec/02_must.rdoc
+spec/03_assert.rdoc

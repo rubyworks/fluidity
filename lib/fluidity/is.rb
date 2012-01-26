@@ -1,6 +1,6 @@
 require 'fluidity/grammer'
 
-class BasicObject
+class Object #BasicObject
 
   # Use `is` nomenclature for assertions.
   #

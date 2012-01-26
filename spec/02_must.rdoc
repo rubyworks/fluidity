@@ -50,7 +50,7 @@ Matcher notation is also supported, if you have any matcher classes
 to use. Assay classes can be converted to matchers, so we can use 
 one of those to try this out. 
 
-  be_sixteen = EqualityAssay[16.0]
+  be_sixteen = EqualAssay[16.0]
 
   16.must be_sixteen
 

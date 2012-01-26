@@ -1,6 +1,8 @@
 require 'fluidity/grammer'
 
-class BasicObject
+# TODO: What about BasicObject ?
+
+class Object #BasicObject
 
   # Use `must` nomenclature for assertions.
   #

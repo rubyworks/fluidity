@@ -14,9 +14,9 @@ module Fluidity
       # Have to override the ususal `#==` method to support this.
       def ==(other)
         if @negate
-          ::EqualityAssay.fail!(@target, other)
+          ::EqualityAssay.refute!(@target, other)
         else
-          ::EqualityAssay.pass!(@target, other)
+          ::EqualityAssay.assert!(@target, other)
         end
       end
 
@@ -25,9 +25,9 @@ module Fluidity
       def method_missing(s, *a, &b)
         if assay = (::Assertion.by_name(s) || ::Assertion.by_operator(s))
           if @negate
-            assay.fail!(@target, *a, &b)
+            assay.refute!(@target, *a, &b)
           else
-            assay.pass!(@target, *a, &b)
+            assay.assert!(@target, *a, &b)
           end
         else
           super(s, *a, &b)

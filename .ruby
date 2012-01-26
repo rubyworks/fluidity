@@ -1,7 +1,6 @@
 ---
 source:
 - meta
-- .ruby
 authors:
 - name: Thomas Sawyer
   email: transfire@gmail.com
@@ -24,29 +23,28 @@ requirements:
 dependencies: []
 conflicts: []
 repositories:
-- uri: git@github.com:rubyworks/assay-rspec.git
+- uri: git@github.com:rubyworks/fluidity.git
   scm: git
   name: upstream
 resources:
-  home: http://rubyworks.github.com/assay-rspec
-  docs: http://rubydoc.info/gems/assay-rspec
-  code: http://github.com/rubyworks/assay-rspec
+  home: http://rubyworks.github.com/fluidity
+  docs: http://rubydoc.info/gems/fluidity
+  code: http://github.com/rubyworks/fluidity
   mail: http://groups.google.com/groups/rubyworks-mailinglist
 extra: {}
 load_path:
 - lib
 revision: 0
 created: '2012-01-18'
-summary: RSpec on Assay
-title: Assay RSpec
+summary: Fluid Validity
+title: Fluidity
 version: 0.1.0
-name: assay-rspec
-description: ! 'Assay RSpec defines a set of RSpec-compatible matcher methods which
+name: fluidity
+description: ! 'Fluidity is an assertions grammer built on top of the Assay assertions
+  framework.
 
-  depend on Assay''s assertion classes. This allows developers to change
+  It defines a set of methods which provide a fluid notation for specifying
 
-  test frameworks without having to change a slew of previously
-
-  defined assertions.'
+  test assertions.'
 organization: Rubyworks
-date: '2012-01-18'
+date: '2012-01-26'

@@ -1,6 +1,8 @@
-= COPYRIGHT NOTICES
+= COPYRIGHT 
 
-== Fluidity
+== NOTICES
+
+=== Fluidity
 
 Copyright:: (c) 2012 Rubyworks
 License:: BSD-2-Clause
@@ -12,10 +14,14 @@ Website:: http://rubyworks.github.com/fluidity
 
     All rights reserved
 
-    Made available under the BSD-2-Clause License
+    Made available under the BSD-2-Clause license
+
+    http://rubyworks.github.com/fluidity
 
 
-== BSD-2-Clause License
+== LICENSES
+
+=== BSD-2-Clause License
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions are met:

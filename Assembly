@@ -20,5 +20,12 @@ email:
     - rubyworks-mailinglist@googlegroups.com
 
 qed:
-  files: spec/*.rdoc
+  files: spec
+
+qedoc:
+  files: spec
+  title: Fluidity
+  output:
+    - DEMOS.rdoc
+    - web/demos.html
 
