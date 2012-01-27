@@ -6,6 +6,7 @@
 
 {<img src="https://secure.travis-ci.org/rubyworks/fluidity.png" />}[http://travis-ci.org/rubyworks/fluidity]
 
+
 == DESCRIPTION
 
 Fluidity is a an assertions notation built on top of the Assay
@@ -13,7 +14,6 @@ assertions framework. It defines a set of methods that provide
 a fluid notation for specify test assertions.
 
 Assay defines assertions in the same way that Ruby defines exceptions.
-An assertion is nothing more that an extended Exception class.
 Assay provides a complete set of these assertion classes for all
 common assertion needs. See {Assay}[http://rubyworks.github.com/assay]
 project for more information on this foundational library.
@@ -23,7 +23,7 @@ project for more information on this foundational library.
 
 Developers want to write assertions easily and concisely. To this end Fluidity
 provides a flexible grammar system which can be used by requiring any of the
-prime crammer methods that extend Object. The most common is probably `should`.
+prime grammar methods that extend Object. The most common is probably `should`.
 
   require 'fluidity/should'
 
@@ -46,13 +46,18 @@ the English like expression. For instance.
 
   10.should.not.be.an.instance_of?(String)
 
-Pretty neat. But, what about speed? Of course, running through four extra method
-calls to make an assertion is going to be slower than making just a single method
-call. So, yes tests might run a bit slower on Fluidity than they would on some
-other less readable assertions system. However, method calls are pretty dang fast
-and unlikely to present any significant performance overhead on test runs.
-At most, tests runs might take a couple of additional seconds for _extremely_
-large test suites.
+Pretty neat, though perhaps bit excessive for a real-life use. Generally
+it's good enough to use the shorter and a tad bit faster:
+ 
+  10.shouldnt.be.instance_of?(String)
+
+Speaking of _fast_, so what about speed? Of course, running through multiple
+extra method calls to make an assertion is going to be slower than making just
+a single method call. So, yes, tests might run a bit slower on Fluidity than
+they would with another less readable assertions system. However, method calls
+are pretty dang fast and unlikely to present any significant performance 
+overhead on test runs. At most, tests runs might take a few additional seconds
+for _very_ _large_ test suites.
 
 
 == INSTALLATION
