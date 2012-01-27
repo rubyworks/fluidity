@@ -22,27 +22,27 @@ project for more information on this foundational library.
 == USAGE
 
 Developers want to write assertions easily and concisely. To this end Fluidity
-provides a flexible grammer system which can be used by requiring any of the
-prime grammer methods that extend BasicObject. The most common is probably `should`.
+provides a flexible grammar system which can be used by requiring any of the
+prime crammer methods that extend Object. The most common is probably `should`.
 
   require 'fluidity/should'
 
   10.should.be.kind_of(Integer)
 
-But if you are acustom to MiniTest's spec methods, you might prefer `must`.
+But if you are accustom to MiniTest's spec methods, you might prefer `must`.
 
   require 'fluidity/must'
 
   10.must.be.kind_of(Integer)
 
-Aslo provided is `assert` for those techy aficionados.
+Also provided is `assert` for those techy aficionados.
 
   require 'fluidity/assert'
 
   10.assert.kind_of(Integer)
 
-So what so fludi about all this. Well, Fluidity allows the developer quite
-the english like expression. For instance.
+So what is so fluid about all this? Well, Fluidity allows the developer quite
+the English like expression. For instance.
 
   10.should.not.be.an.instance_of?(String)
 
@@ -69,7 +69,7 @@ Site installation with the tarball can be done with Ruby Setup
 
 Copyright (c) 2012 Rubyworks
 
-This program is ditributed under the terms of the *BSD-2-Cluase* license.
+This program is distributed under the terms of the *BSD-2-Clause* license.
 
 See COPYING.rdoc file for details.
 
