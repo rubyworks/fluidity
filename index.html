@@ -15,17 +15,16 @@ src="https://secure.travis-ci.org/rubyworks/fluidity.png" /></a></p>
 framework. It defines a set of methods that provide a fluid notation for
 specify test assertions.</p>
 
-<p>Assay defines assertions in the same way that Ruby defines exceptions. An
-assertion is nothing more that an extended Exception class. Assay provides
-a complete set of these assertion classes for all common assertion needs.
-See <a href="http://rubyworks.github.com/assay">Assay</a> project for more
-information on this foundational library.</p>
+<p>Assay defines assertions in the same way that Ruby defines exceptions.
+Assay provides a complete set of these assertion classes for all common
+assertion needs. See <a href="http://rubyworks.github.com/assay">Assay</a>
+project for more information on this foundational library.</p>
 
 <h2 id="label-USAGE">USAGE</h2>
 
 <p>Developers want to write assertions easily and concisely. To this end
 Fluidity provides a flexible grammar system which can be used by requiring
-any of the prime crammer methods that extend Object. The most common is
+any of the prime grammar methods that extend Object. The most common is
 probably `should`.</p>
 
 <pre class="ruby"><span class="ruby-identifier">require</span> <span class="ruby-string">'fluidity/should'</span>
@@ -53,13 +52,18 @@ quite the English like expression. For instance.</p>
 
 <pre>10.should.not.be.an.instance_of?(String)</pre>
 
-<p>Pretty neat. But, what about speed? Of course, running through four extra
-method calls to make an assertion is going to be slower than making just a
-single method call. So, yes tests might run a bit slower on Fluidity than
-they would on some other less readable assertions system. However, method
-calls are pretty dang fast and unlikely to present any significant
-performance overhead on test runs. At most, tests runs might take a couple
-of additional seconds for <em>extremely</em> large test suites.</p>
+<p>Pretty neat, though perhaps bit excessive for a real-life use. Generally
+it’s good enough to use the shorter and a tad bit faster:</p>
+
+<pre>10.shouldnt.be.instance_of?(String)</pre>
+
+<p>Speaking of <em>fast</em>, so what about speed? Of course, running through
+multiple extra method calls to make an assertion is going to be slower than
+making just a single method call. So, yes, tests might run a bit slower on
+Fluidity than they would with another less readable assertions system.
+However, method calls are pretty dang fast and unlikely to present any
+significant performance  overhead on test runs. At most, tests runs might
+take a few additional seconds for <em>very</em> <em>large</em> test suites.</p>
 
 <h2 id="label-INSTALLATION">INSTALLATION</h2>
 
