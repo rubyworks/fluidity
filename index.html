@@ -1,1 +1,81 @@
-My GitHub Page
+
+<h1 id="label-Fluidity">Fluidity</h1>
+
+<p><a href="http://rubyworks.github.com/fluidity">Website</a> / <a
+href="http://github.com/rubyworks/fluidity">Development</a> / <a
+href="http://groups.google.com/group/rubyworks-mailinglist">Mailing
+List</a></p>
+
+<p><a href="http://travis-ci.org/rubyworks/fluidity"><img
+src="https://secure.travis-ci.org/rubyworks/fluidity.png" /></a></p>
+
+<h2 id="label-DESCRIPTION">DESCRIPTION</h2>
+
+<p>Fluidity is a an assertions notation built on top of the Assay assertions
+framework. It defines a set of methods that provide a fluid notation for
+specify test assertions.</p>
+
+<p>Assay defines assertions in the same way that Ruby defines exceptions. An
+assertion is nothing more that an extended Exception class. Assay provides
+a complete set of these assertion classes for all common assertion needs.
+See <a href="http://rubyworks.github.com/assay">Assay</a> project for more
+information on this foundational library.</p>
+
+<h2 id="label-USAGE">USAGE</h2>
+
+<p>Developers want to write assertions easily and concisely. To this end
+Fluidity provides a flexible grammar system which can be used by requiring
+any of the prime crammer methods that extend Object. The most common is
+probably `should`.</p>
+
+<pre class="ruby"><span class="ruby-identifier">require</span> <span class="ruby-string">'fluidity/should'</span>
+
+<span class="ruby-value">10</span>.<span class="ruby-identifier">should</span>.<span class="ruby-identifier">be</span>.<span class="ruby-identifier">kind_of</span>(<span class="ruby-constant">Integer</span>)
+</pre>
+
+<p>But if you are accustom to MiniTest’s spec methods, you might prefer
+`must`.</p>
+
+<pre class="ruby"><span class="ruby-identifier">require</span> <span class="ruby-string">'fluidity/must'</span>
+
+<span class="ruby-value">10</span>.<span class="ruby-identifier">must</span>.<span class="ruby-identifier">be</span>.<span class="ruby-identifier">kind_of</span>(<span class="ruby-constant">Integer</span>)
+</pre>
+
+<p>Also provided is `assert` for those techy aficionados.</p>
+
+<pre class="ruby"><span class="ruby-identifier">require</span> <span class="ruby-string">'fluidity/assert'</span>
+
+<span class="ruby-value">10</span>.<span class="ruby-identifier">assert</span>.<span class="ruby-identifier">kind_of</span>(<span class="ruby-constant">Integer</span>)
+</pre>
+
+<p>So what is so fluid about all this? Well, Fluidity allows the developer
+quite the English like expression. For instance.</p>
+
+<pre>10.should.not.be.an.instance_of?(String)</pre>
+
+<p>Pretty neat. But, what about speed? Of course, running through four extra
+method calls to make an assertion is going to be slower than making just a
+single method call. So, yes tests might run a bit slower on Fluidity than
+they would on some other less readable assertions system. However, method
+calls are pretty dang fast and unlikely to present any significant
+performance overhead on test runs. At most, tests runs might take a couple
+of additional seconds for <em>extremely</em> large test suites.</p>
+
+<h2 id="label-INSTALLATION">INSTALLATION</h2>
+
+<p>To install with RubyGems simply open a console and type:</p>
+
+<pre>$ gem install fluidity</pre>
+
+<p>Site installation with the tarball can be done with Ruby Setup (gem install
+setup). See <a
+href="http://rubyworks.github.com/setup">rubyworks.github.com/setup</a>.</p>
+
+<h2 id="label-COPYRIGHTS">COPYRIGHTS</h2>
+
+<p>Copyright © 2012 Rubyworks</p>
+
+<p>This program is distributed under the terms of the
+<strong>BSD-2-Clause</strong> license.</p>
+
+<p>See COPYING.rdoc file for details.</p>
