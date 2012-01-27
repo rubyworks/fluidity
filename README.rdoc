@@ -4,6 +4,7 @@
 {Development}[http://github.com/rubyworks/fluidity] /
 {Mailing List}[http://groups.google.com/group/rubyworks-mailinglist]
 
+{<img src="https://secure.travis-ci.org/rubyworks/fluidity.png" />}[http://travis-ci.org/rubyworks/fluidity]
 
 == DESCRIPTION
 
