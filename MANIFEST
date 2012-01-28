@@ -1,5 +1,6 @@
 #!mast .ruby .yardopts bin demo lib spec test [A-Z].*
 .ruby
+lib/fluidity/about.rb
 lib/fluidity/assert.rb
 lib/fluidity/grammer.rb
 lib/fluidity/is.rb

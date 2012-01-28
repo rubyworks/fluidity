@@ -1,6 +1,7 @@
 ---
 source:
 - meta
+- .ruby
 authors:
 - name: Thomas Sawyer
   email: transfire@gmail.com
