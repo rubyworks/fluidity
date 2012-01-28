@@ -47,4 +47,4 @@ description: ! 'Fluidity is an assertions grammer built on top of the Assay asse
 
   test assertions.'
 organization: Rubyworks
-date: '2012-01-26'
+date: '2012-01-27'
