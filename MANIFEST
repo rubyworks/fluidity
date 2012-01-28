@@ -8,6 +8,7 @@ lib/fluidity/must.rb
 lib/fluidity/should.rb
 lib/fluidity.rb
 lib/fluidity.yml
+spec/00_intro.rdoc
 spec/01_should.rdoc
 spec/02_must.rdoc
 spec/03_assert.rdoc

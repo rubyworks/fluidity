@@ -1,7 +1,6 @@
 ---
 source:
 - meta
-- .ruby
 authors:
 - name: Thomas Sawyer
   email: transfire@gmail.com
@@ -39,10 +38,9 @@ revision: 0
 created: '2012-01-18'
 summary: Fluid Validity
 title: Fluidity
-version: 0.1.0
+version: 0.1.1
 name: fluidity
-description: ! 'Fluidity is an assertions grammer built on top of the Assay assertions
-  framework.
+description: ! 'Fluidity is an assertions grammar built on the Assay assertions framework.
 
   It defines a set of methods which provide a fluid notation for specifying
 
