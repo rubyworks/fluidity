@@ -28,5 +28,7 @@ class Object #BasicObject
     end
   end
 
+  alias_method :musnt, :must_not
+
 end
 

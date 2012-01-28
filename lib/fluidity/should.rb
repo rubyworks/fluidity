@@ -26,5 +26,7 @@ class Object #BasicObject
     end
   end
 
+  alias_method :shouldnt, :should_not
+
 end
 

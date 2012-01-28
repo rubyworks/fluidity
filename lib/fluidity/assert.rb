@@ -6,10 +6,13 @@ class Object
   #
   #  10.assert.kind_of?(Integer)
   #
-  def assert(matcher=nil, *args)
+  def assert(matcher=nil, *args, &blk)
     if matcher
-      return super(matcher, *args) unless matcher.respond_to?(:===) # not good enough!!!
-      matcher =~ self
+      if matcher.respond_to?(:=~) # good enough ?
+        matcher =~ self
+      else
+        super(matcher, *args, &blk)
+      end
     else
       ::Fluidity::Grammer::Assert.new(self)
     end
