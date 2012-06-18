@@ -1,14 +1,12 @@
 require 'fluidity/grammer'
 
-# TODO: What about BasicObject ?
-
 class Object #BasicObject
 
-  # Use `must` nomenclature for assertions.
+  # Use `will` nomenclature for assertions.
   #
-  #  10.must.be.kind_of(Integer)
+  #  10.will.be.kind_of(Integer)
   #
-  def must(matcher=nil)
+  def will(matcher=nil)
     if matcher
       matcher =~ self
     else
@@ -16,9 +14,9 @@ class Object #BasicObject
     end
   end
 
-  # Also, `must_not` nomenclature for assertions.
+  # Also, `will_not` nomenclature for assertions.
   #
-  #  10.must_not.be.kind_of?(Integer)
+  #  10.will_not.be.kind_of?(Integer)
   #
   def must_not(matcher=nil)
     if matcher
@@ -28,11 +26,11 @@ class Object #BasicObject
     end
   end
 
-  # Contraction do must not.
+  # Contraction of will not.
   #
-  #  10.mustnt.be.kind_of?(Integer)
+  #  10.wont.be.kind_of?(Integer)
   #
-  alias_method :mustnt, :must_not
+  alias_method :wont, :will_not
 
 end
 
