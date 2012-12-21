@@ -1,6 +1,6 @@
 # HISTORY
 
-## 0.1.1 / 2012-01-28
+## 0.1.1 / 2012-12-21
 
 Fix bug in #assert nomenclature method, and add support for
 both #shouldnt and #musnt in their respective files.
