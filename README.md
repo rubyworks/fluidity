@@ -7,14 +7,13 @@
 
 <br/>
 
-Fluidity is a an assertions notation built on top of the Assay
-assertions framework. It defines a set of methods that provide
-a fluid notation for specify test assertions.
+Fluidity is an assertions framework that provides avery  elegant fluid
+notation for specifying test assertions. 
 
-Assay defines assertions in the same way that Ruby defines exceptions.
-Assay provides a complete set of these assertion classes for all
-common assertion needs. See [Assay](http://rubyworks.github.com/assay)
-project for more information on this foundational library.
+Fluidity is built on top of the [Assay](http://rubyworks.github.com/assay)
+assertions meta-framework which provides it a solid foundation. Assay defines
+assertions in the same way that Ruby defines exceptions. Assay provides
+a complete set of these assertion classes for all common assertion needs.
 
 
 ## Instruction
@@ -58,7 +57,7 @@ overhead on test runs. At most, tests runs might take a few additional seconds
 for _very_ _large_ test suites.
 
 
-== Installation
+## Installation
 
 To install with RubyGems simply open a console and type:
 
@@ -68,7 +67,7 @@ Site installation with the tarball can be done with Ruby Setup
 (gem install setup). See http://rubyworks.github.com/setup.
 
 
-== Copyrights
+## Copyrights
 
 Fluidity is copyrighted open source software.
 
