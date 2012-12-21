@@ -7,11 +7,11 @@
 
 <br/>
 
-Fluidity is an assertions framework that provides avery  elegant fluid
+Fluidity is an assertions framework that provides a very elegant fluid
 notation for specifying test assertions. 
 
 Fluidity is built on top of the [Assay](http://rubyworks.github.com/assay)
-assertions meta-framework which provides it a solid foundation. Assay defines
+assertions meta-framework, giving it a solid foundation. Assay defines
 assertions in the same way that Ruby defines exceptions. Assay provides
 a complete set of these assertion classes for all common assertion needs.
 
