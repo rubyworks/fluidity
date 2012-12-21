@@ -26,6 +26,6 @@ qedoc:
   files: demo
   title: Fluidity
   output:
-    - DEMOS.rdoc
+    - DEMOS.md
     - web/demos.html
 

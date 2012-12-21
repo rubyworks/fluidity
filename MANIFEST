@@ -1,15 +1,21 @@
-#!mast .ruby .yardopts bin demo lib spec test [A-Z].*
+#!mast .index .ruby .yardopts bin demo lib share spec test [A-Z]*.*
+.index
 .ruby
+demo/00_intro.md
+demo/01_should.md
+demo/02_must.md
+demo/03_assert.md
+demo/04_other.md
 lib/fluidity/about.rb
 lib/fluidity/assert.rb
 lib/fluidity/grammer.rb
 lib/fluidity/is.rb
 lib/fluidity/must.rb
 lib/fluidity/should.rb
+lib/fluidity/will.rb
 lib/fluidity.rb
 lib/fluidity.yml
-spec/00_intro.rdoc
-spec/01_should.rdoc
-spec/02_must.rdoc
-spec/03_assert.rdoc
-spec/04_other.rdoc
+LICENSE.txt
+HISTORY.md
+README.md
+DEMOS.md

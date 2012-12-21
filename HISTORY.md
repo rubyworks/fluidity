@@ -1,9 +1,9 @@
-= HISTORY
+# HISTORY
 
-== 0.1.1 | 2012-01-28
+## 0.1.1 / 2012-01-28
 
 Fix bug in #assert nomenclature method, and add support for
-#shouldnt and musnt in their respective files.
+both #shouldnt and #musnt in their respective files.
 
 Changes:
 
@@ -12,7 +12,7 @@ Changes:
 * Add #musnt as alias for #must_not.
 
 
-== 0.1.0 | 2012-01-27
+## 0.1.0 / 2012-01-27
 
 This is the initial release of Fluidity.
 

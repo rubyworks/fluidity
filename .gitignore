@@ -6,4 +6,5 @@ tmp
 site
 web
 work/trash
+*.lock
 DEMOS.*
