@@ -1,40 +1,49 @@
 ---
-source:
-- meta
+type: ruby
+revision: 2013
+sources:
+- var
 authors:
 - name: Thomas Sawyer
   email: transfire@gmail.com
+organizations: []
+requirements:
+- name: assay
+- groups:
+  - build
+  development: true
+  name: detroit
+- groups:
+  - test
+  development: true
+  name: qed
+conflicts: []
+alternatives: []
+resources:
+- type: home
+  uri: http://rubyworks.github.com/fluidity
+  label: Homepage
+- type: docs
+  uri: http://rubydoc.info/gems/fluidity
+  label: Documentation
+- type: code
+  uri: http://github.com/rubyworks/fluidity
+  label: Source Code
+- type: mail
+  uri: http://groups.google.com/groups/rubyworks-mailinglist
+  label: Mailing List
+repositories:
+- name: upstream
+  scm: git
+  uri: git@github.com:rubyworks/fluidity.git
+categories: []
+paths:
+  load:
+  - lib
 copyrights:
 - holder: Thomas Sawyer
   year: '2012'
   license: BSD-2-Clause
-replacements: []
-alternatives: []
-requirements:
-- name: assay
-- name: detroit
-  groups:
-  - build
-  development: true
-- name: qed
-  groups:
-  - test
-  development: true
-dependencies: []
-conflicts: []
-repositories:
-- uri: git@github.com:rubyworks/fluidity.git
-  scm: git
-  name: upstream
-resources:
-  home: http://rubyworks.github.com/fluidity
-  docs: http://rubydoc.info/gems/fluidity
-  code: http://github.com/rubyworks/fluidity
-  mail: http://groups.google.com/groups/rubyworks-mailinglist
-extra: {}
-load_path:
-- lib
-revision: 0
 created: '2012-01-18'
 summary: Fluid Validity
 title: Fluidity
@@ -45,5 +54,4 @@ description: ! 'Fluidity is an assertions grammar built on the Assay assertions 
   It defines a set of methods which provide a fluid notation for specifying
 
   test assertions.'
-organization: Rubyworks
-date: '2012-01-27'
+date: '2012-12-21'
